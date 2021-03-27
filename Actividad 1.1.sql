@@ -8,10 +8,8 @@ Create table Carreras(
 	Nombre varchar(30) not null ,
 	fechaCreacion date not null check(fechaCreacion < getdate()),
 	mailCarrera varchar(50) not null,
-	Nivel varchar(30) not null check (Nivel = 'Diplomatura' or Nivel ='Pregrado'or Nivel ='Grado' or Nivel = 'Posgrado'),
-
+	Nivel varchar(30) not null check (Nivel = 'Diplomatura' or Nivel ='Pregrado'or Nivel ='Grado' or Nivel = 'Posgrado')
 );
-
 GO
 
 Create table Alumnos(
